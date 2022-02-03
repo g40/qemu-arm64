@@ -1,0 +1,5 @@
+# QEMU experiments
+
+*.img
+*.iso
+*.log

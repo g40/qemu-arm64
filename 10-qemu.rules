@@ -1,0 +1,13 @@
+#
+# credit: https://stty.io/2019/05/13/qemu-vm-wireguard-vpn-tun-tap-networking/
+# https://unix.stackexchange.com/questions/18215/which-user-group-can-use-the-tap-net-device
+#
+# requires user to be in netdev group. 
+#
+# sudo usermod -a -G netdev <username>
+#
+# location: /etc/udev/rules.d/10-qemu.rules
+#
+
+KERNEL=="tun", GROUP="netdev", MODE="0660", OPTIONS+="static_node=net/tun"
+
