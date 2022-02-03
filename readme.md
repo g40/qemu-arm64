@@ -114,9 +114,7 @@ means no direct terminal access to QEMU guest.
 
 So access via SSH and run `sudo systemctl start serial-getty@ttyAMA0.service` to get console login.
 
-No clear idea on how to adjust TTY timeouts. I have an outstanding question here:
-
-`https://askubuntu.com/questions/1389426/ubuntu-20-lts-how-to-adjust-serial-gettyttyama0-service-timeouts`
+No clear idea on how to adjust TTY timeouts. I have an outstanding question [here] (https://askubuntu.com/questions/1389426/ubuntu-20-lts-how-to-adjust-serial-gettyttyama0-service-timeouts)
 
 Some commands which show existing parameters:
 
