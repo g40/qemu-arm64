@@ -1,12 +1,16 @@
 
-    QEMU: Run a Ubuntu ARM64 guest on a Ubuntu x64 host. Full sudo-free networking with udev rules, plus scripts for host .IMG resizing.
+    QEMU: Run a Ubuntu ARM64 guest on a Ubuntu x64 host. 
+    Full sudo-free guest networking with udev rules, 
+    plus scripts for resizing .IMG using the host.
 
     
 #### TL;DR
 
-First time use:
+First time use (all on the host system):
 
 ```
+# clone the repo
+git clone https://github.com/g40/qemu-arm64.git
 # add current user to netdev group
 sudo usermod -a -G netdev `whoami`
 # add udev rule for access to bridged adapter
