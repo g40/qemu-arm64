@@ -1,5 +1,5 @@
 
-    QEMU: Run a networked Ubuntu ARM64 guest on a Ubuntu x64 host
+    QEMU: Run a Ubuntu ARM64 guest on a Ubuntu x64 host. Full sudo-free networking with udev rules, plus scripts for host .IMG resizing.
 
     
 #### TL;DR
@@ -114,7 +114,7 @@ means no direct terminal access to QEMU guest.
 
 So access via SSH and run `sudo systemctl start serial-getty@ttyAMA0.service` to get console login.
 
-No clear idea on how to adjust TTY timeouts. I have an outstanding question [here] (https://askubuntu.com/questions/1389426/ubuntu-20-lts-how-to-adjust-serial-gettyttyama0-service-timeouts)
+No clear idea on how to adjust TTY timeouts. I have an outstanding question here: (https://askubuntu.com/questions/1389426/ubuntu-20-lts-how-to-adjust-serial-gettyttyama0-service-timeouts)
 
 Some commands which show existing parameters:
 
