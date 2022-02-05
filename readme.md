@@ -1,7 +1,7 @@
 
     QEMU: Run a Ubuntu ARM64 guest on a Ubuntu x64 host. 
     Full sudo-free guest networking with udev rules, 
-    plus scripts for resizing .IMG using the host.
+    plus scripts for resizing guest .IMG file using host-based tooling.
 
     
 #### TL;DR
